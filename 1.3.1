@@ -1,0 +1,23 @@
+#include<stdio.h>
+void main()
+{
+	int i,j,k,n,s;
+	scanf("%d",&n);
+	int la[n],lb[n];
+	for (i=0;i<n;i++)
+		scanf("%d",&la[i]);
+	for (i=0;i<n;i++)
+		scanf("%d",&lb[i]);
+    i = j =0;
+    for (k=0;k<n;k++){
+		if(la[i]>lb[j]){
+			s = lb[j];
+      j++;
+		}
+		else{
+			s = la[i];
+      i++;
+		}
+	}
+    printf("%d",s);
+}
